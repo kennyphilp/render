@@ -11,10 +11,7 @@ def home():
 
     currentDate=dt.datetime.today()
 
-    print(f"The current US date is {currentDate.strftime("%x")}")
-
     formattedDate= currentDate.strftime("%x")
-
     print("The date is " + formattedDate)
     return render_template("index.html", displayDate = formattedDate)
 
